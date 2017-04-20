@@ -1,0 +1,57 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+web/node_modules
+
+# testing
+/coverage
+
+# production
+/src/main/resources/static
+
+# misc
+.DS_Store
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# spring boot
+.gradle
+*.sw?
+.#*
+*#
+*~
+/build
+/code
+.classpath
+.project
+.settings
+.metadata
+.factorypath
+.recommenders
+bin
+build
+lib/
+target
+.factorypath
+.springBeans
+interpolated*.xml
+dependency-reduced-pom.xml
+build.log
+_site/
+.*.md.html
+manifest.yml
+MANIFEST.MF
+settings.xml
+activemq-data
+overridedb.*
+*.iml
+*.ipr
+*.iws
+.idea
+*.jar
+.DS_Store
+.factorypath
+dump.rdb
+transaction-logs
