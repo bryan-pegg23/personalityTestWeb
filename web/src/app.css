@@ -3,11 +3,6 @@ body {
     UI, Roboto, Oxygen-Sans,Ubuntu,Cantarell,Helvetice Neue, sans-serif;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 ul {
   padding: 0;
 }
@@ -15,6 +10,12 @@ ul {
 li {
   list-style-type: none;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 
 .languages {
   display: flex;
@@ -25,4 +26,24 @@ li {
   margin: 10px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.popular-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.space-list-items {
+  margin-bottom: 7px;
+}
+
+.avatar{
+  width: 150px;
+  border-radius: 50%;
+}
+
+.popular-rank {
+  font-size: 20px;
+  margin: 10px;
 }

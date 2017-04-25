@@ -3,10 +3,10 @@ import React from 'react'
 import Popular from './Popular'
 
 class App extends React.Component {
-  render() {
+  render () {
     return (
       <Popular />
-      )
+    )
   }
 }
 
