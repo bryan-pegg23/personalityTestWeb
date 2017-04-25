@@ -93,6 +93,19 @@ a {
   font-weight: bold;
 }
 
+.reset {
+  border: none;
+  background: tranparent;
+  color: #d0021b;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.reset:hover {
+  cursor: pointer;
+}
+
 .nav li {
   margin-right: 15px;
 }
