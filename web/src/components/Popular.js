@@ -23,22 +23,23 @@ const RepoGrid = (props) => {
   return (
     <ul className='popular-list'>
       {props.repos.map((repo, index) =>
-        (<li key={repo.name} className='popular-item'>
-            <div className='popular-rank'>#{index + 1}</div>
-            <ul className='space-list-items'>
+        <li key={repo.name} className='popular-item'>
+          <div className='popular-rank'>#{index + 1}</div>
+          <ul className='space-list-items'>
+            <li>
+              <img className='avatar' src={repo.owner.avatar_url} alt={'Avatar for ' + repo.owner.login} />
               <li>
-                <img
-                  className='avatar'
-                  src={repo.owner.avatar_url}
-                  alt={'Avatar for ' + repo.owner.login}
-                />
-                <li><a href={repo.html_url}>{repo.name}</a></li>
-                <li>@{repo.owner.login}</li>
-                <li>{repo.stargazers_count} starts</li>
+                <a href={repo.html_url}>{repo.name}</a>
               </li>
-            </ul>
-          </li>
-        )
+              <li>
+                @{repo.owner.login}
+              </li>
+              <li>
+                {repo.stargazers_count} starts
+              </li>
+            </li>
+          </ul>
+        </li>
       )}
     </ul>
   )
@@ -76,7 +77,7 @@ class Popular extends React.Component {
 
     api.fetchPopularRepos(lang)
       .then((repos) =>
-        this.setState({repos: repos})).bind(this)
+        this.setState({repos: repos}))
   }
 
   render () {
